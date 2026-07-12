@@ -18,7 +18,7 @@ const years = project.yearFrom === project.yearTo ? `${project.yearFrom}` : `${p
     <div class="meta">
       {project.country && <span class="badge country">{project.country}</span>}
       {(project.types ?? []).map((t) => <span class="badge">{t}</span>)}
-      <span class="count muted">{years} · newest first</span>
+      <span class="count muted">{years}</span>
     </div>
   </header>
 
