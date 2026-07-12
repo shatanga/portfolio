@@ -40,15 +40,21 @@ function slugify(s) {
     .replace(/^-+|-+$/g, '');
 }
 
-// "Name - Country - Type" -> parts. Type may be missing (2-part folders).
-// A trailing roman numeral (e.g. "paper mill II") is only there to keep two
-// same-named folders distinct; strip it from the displayed type.
+// "Name - Country - Type [- Type2 ...]" -> parts. Everything after the country
+// becomes one badge per segment (so a folder can carry several type tags).
+// Type may be missing (2-part folders). A trailing roman numeral
+// (e.g. "paper mill II") only distinguishes duplicate folders; strip it.
 function parseFolderName(name) {
   const parts = name.split(' - ').map((p) => p.trim());
+  const types = parts.slice(2).filter(Boolean);
+  if (types.length) {
+    types[types.length - 1] = types[types.length - 1].replace(/\s+I{1,3}$/, '').trim();
+  }
   return {
     factory: parts[0] || name,
     country: parts[1] || '',
-    type: (parts.slice(2).join(' - ') || '').replace(/\s+I{1,3}$/, '').trim(),
+    types: types.filter(Boolean),
+    type: types.filter(Boolean).join(' · '),
   };
 }
 

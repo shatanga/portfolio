@@ -4,6 +4,9 @@
     "folder": "Longcliffe Quarries Ltd - UK - stone quarry",
     "factory": "Longcliffe Quarries Ltd",
     "country": "UK",
+    "types": [
+      "stone quarry"
+    ],
     "type": "stone quarry",
     "count": 7,
     "newest": "2026-06-27T06:52:20.000Z",
@@ -74,6 +77,9 @@
     "folder": "Dreher - Hungary - brewery",
     "factory": "Dreher",
     "country": "Hungary",
+    "types": [
+      "brewery"
+    ],
     "type": "brewery",
     "count": 17,
     "newest": "2026-03-05T11:47:50.000Z",
@@ -224,6 +230,9 @@
     "folder": "Shotton mill - UK - paper mill",
     "factory": "Shotton mill",
     "country": "UK",
+    "types": [
+      "paper mill"
+    ],
     "type": "paper mill",
     "count": 21,
     "newest": "2026-01-09T10:26:55.000Z",
@@ -406,6 +415,9 @@
     "folder": "Koehler paper - Germany - paper mill",
     "factory": "Koehler paper",
     "country": "Germany",
+    "types": [
+      "paper mill"
+    ],
     "type": "paper mill",
     "count": 15,
     "newest": "2025-02-14T11:52:06.000Z",
@@ -540,6 +552,9 @@
     "folder": "Saint Gobain - Czech Republic - fibre glass manufacturer",
     "factory": "Saint Gobain",
     "country": "Czech Republic",
+    "types": [
+      "fibre glass manufacturer"
+    ],
     "type": "fibre glass manufacturer",
     "count": 36,
     "newest": "2025-01-07T00:00:00.000Z",
@@ -842,6 +857,9 @@
     "folder": "Lasselsberger - Czech Republic - tile manufacturer",
     "factory": "Lasselsberger",
     "country": "Czech Republic",
+    "types": [
+      "tile manufacturer"
+    ],
     "type": "tile manufacturer",
     "count": 33,
     "newest": "2024-06-07T09:14:04.000Z",
@@ -1120,6 +1138,9 @@
     "folder": "Chart Ferox - Czech Republic - Petrol Station",
     "factory": "Chart Ferox",
     "country": "Czech Republic",
+    "types": [
+      "Petrol Station"
+    ],
     "type": "Petrol Station",
     "count": 7,
     "newest": "2024-05-16T14:10:13.000Z",
@@ -1190,6 +1211,9 @@
     "folder": "Mondi - Czech Republic - paper mill II",
     "factory": "Mondi",
     "country": "Czech Republic",
+    "types": [
+      "paper mill"
+    ],
     "type": "paper mill",
     "count": 6,
     "newest": "2024-05-03T10:56:04.000Z",
@@ -1252,6 +1276,9 @@
     "folder": "Model Sachsen Papier - Germany - paper mill",
     "factory": "Model Sachsen Papier",
     "country": "Germany",
+    "types": [
+      "paper mill"
+    ],
     "type": "paper mill",
     "count": 12,
     "newest": "2023-06-02T13:04:15.000Z",
@@ -1362,6 +1389,9 @@
     "folder": "Stora Enso - Sweden - paper mill",
     "factory": "Stora Enso",
     "country": "Sweden",
+    "types": [
+      "paper mill"
+    ],
     "type": "paper mill",
     "count": 12,
     "newest": "2023-04-24T05:46:40.000Z",
@@ -1472,6 +1502,9 @@
     "folder": "Stora Enso - Finland - paper mill",
     "factory": "Stora Enso",
     "country": "Finland",
+    "types": [
+      "paper mill"
+    ],
     "type": "paper mill",
     "count": 13,
     "newest": "2023-03-22T15:50:32.000Z",
@@ -1590,6 +1623,9 @@
     "folder": "Mondi Bubak - Czech Republic - paper mill",
     "factory": "Mondi Bubak",
     "country": "Czech Republic",
+    "types": [
+      "paper mill"
+    ],
     "type": "paper mill",
     "count": 10,
     "newest": "2023-01-17T15:28:36.000Z",
@@ -1684,6 +1720,9 @@
     "folder": "Model Sachsen Papier - Germany - rewinder dismantling",
     "factory": "Model Sachsen Papier",
     "country": "Germany",
+    "types": [
+      "rewinder dismantling"
+    ],
     "type": "rewinder dismantling",
     "count": 14,
     "newest": "2022-12-10T15:54:37.000Z",
@@ -1810,6 +1849,9 @@
     "folder": "Keller Lufttechnik - Germany - pharmacy incubators",
     "factory": "Keller Lufttechnik",
     "country": "Germany",
+    "types": [
+      "pharmacy incubators"
+    ],
     "type": "pharmacy incubators",
     "count": 7,
     "newest": "2022-12-06T12:31:11.000Z",
@@ -1880,6 +1922,9 @@
     "folder": "Keller Lufttechnik - Italy - door handle manufacturer",
     "factory": "Keller Lufttechnik",
     "country": "Italy",
+    "types": [
+      "door handle manufacturer"
+    ],
     "type": "door handle manufacturer",
     "count": 7,
     "newest": "2022-09-26T09:39:00.000Z",
@@ -1950,6 +1995,9 @@
     "folder": "Alizay - France - dismantling paper mill",
     "factory": "Alizay",
     "country": "France",
+    "types": [
+      "dismantling paper mill"
+    ],
     "type": "dismantling paper mill",
     "count": 7,
     "newest": "2022-05-12T12:59:40.000Z",
@@ -2020,6 +2068,9 @@
     "folder": "Keller Lufttechnik - Germany - Automotive Beck",
     "factory": "Keller Lufttechnik",
     "country": "Germany",
+    "types": [
+      "Automotive Beck"
+    ],
     "type": "Automotive Beck",
     "count": 10,
     "newest": "2022-01-21T15:19:12.000Z",
@@ -2110,124 +2161,128 @@
     ]
   },
   {
-    "slug": "keller-lufttechnik-germany-karlsruhe",
-    "folder": "Keller Lufttechnik - Germany - Karlsruhe",
+    "slug": "keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing",
+    "folder": "Keller Lufttechnik - Germany - MinERALiX GmbH - construction rubble waste processing",
     "factory": "Keller Lufttechnik",
     "country": "Germany",
-    "type": "Karlsruhe",
+    "types": [
+      "MinERALiX GmbH",
+      "construction rubble waste processing"
+    ],
+    "type": "MinERALiX GmbH · construction rubble waste processing",
     "count": 14,
     "newest": "2021-12-10T11:10:22.000Z",
     "yearFrom": 2021,
     "yearTo": 2021,
-    "cover": "gallery/keller-lufttechnik-germany-karlsruhe/009_thumb.jpg",
+    "cover": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/009_thumb.jpg",
     "images": [
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/001.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/001_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/001.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/001_thumb.jpg",
         "w": 1600,
         "h": 800,
         "date": "2021-12-10T11:10:22.000Z",
         "orig": "IMG_20211210_111022_7.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/002.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/002_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/002.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/002_thumb.jpg",
         "w": 1600,
         "h": 800,
         "date": "2021-12-09T09:52:21.000Z",
         "orig": "IMG_20211209_095221_2.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/003.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/003_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/003.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/003_thumb.jpg",
         "w": 1200,
         "h": 1600,
         "date": "2021-11-27T10:31:32.000Z",
         "orig": "IMG_20211127_103132_7.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/004.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/004_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/004.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/004_thumb.jpg",
         "w": 1600,
         "h": 800,
         "date": "2021-11-25T17:34:21.000Z",
         "orig": "IMG_20211125_173421_2.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/005.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/005_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/005.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/005_thumb.jpg",
         "w": 1600,
         "h": 800,
         "date": "2021-11-25T17:33:48.000Z",
         "orig": "IMG_20211125_173348_1.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/006.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/006_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/006.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/006_thumb.jpg",
         "w": 800,
         "h": 1600,
         "date": "2021-11-23T10:20:42.000Z",
         "orig": "IMG_20211123_102042_9.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/007.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/007_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/007.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/007_thumb.jpg",
         "w": 1600,
         "h": 800,
         "date": "2021-11-22T18:22:07.000Z",
         "orig": "IMG_20211122_182207_7.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/008.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/008_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/008.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/008_thumb.jpg",
         "w": 1600,
         "h": 1200,
         "date": "2021-11-20T11:36:33.000Z",
         "orig": "IMG_20211120_113633_3.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/009.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/009_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/009.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/009_thumb.jpg",
         "w": 1600,
         "h": 1200,
         "date": "2021-11-20T09:46:58.000Z",
         "orig": "IMG_20211120_094658_4.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/010.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/010_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/010.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/010_thumb.jpg",
         "w": 1600,
         "h": 900,
         "date": "2021-11-12T09:08:30.000Z",
         "orig": "IMG_20211112_090831_0.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/011.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/011_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/011.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/011_thumb.jpg",
         "w": 1600,
         "h": 900,
         "date": "2021-11-12T09:08:00.000Z",
         "orig": "IMG_20211112_090800_9.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/012.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/012_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/012.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/012_thumb.jpg",
         "w": 1600,
         "h": 900,
         "date": "2021-11-09T14:48:21.000Z",
         "orig": "IMG_20211109_144821_4.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/013.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/013_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/013.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/013_thumb.jpg",
         "w": 1600,
         "h": 900,
         "date": "2021-11-09T14:47:37.000Z",
         "orig": "IMG_20211109_144737_9.jpg"
       },
       {
-        "full": "gallery/keller-lufttechnik-germany-karlsruhe/014.jpg",
-        "thumb": "gallery/keller-lufttechnik-germany-karlsruhe/014_thumb.jpg",
+        "full": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/014.jpg",
+        "thumb": "gallery/keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing/014_thumb.jpg",
         "w": 1600,
         "h": 900,
         "date": "2021-11-09T10:06:40.000Z",
@@ -2240,6 +2295,9 @@
     "folder": "Smartply - Ireland - OSB factory",
     "factory": "Smartply",
     "country": "Ireland",
+    "types": [
+      "OSB factory"
+    ],
     "type": "OSB factory",
     "count": 39,
     "newest": "2021-09-30T23:00:00.000Z",
@@ -2566,6 +2624,9 @@
     "folder": "Mondi - Czech Republic - paper mill",
     "factory": "Mondi",
     "country": "Czech Republic",
+    "types": [
+      "paper mill"
+    ],
     "type": "paper mill",
     "count": 8,
     "newest": "2020-10-13T08:17:22.000Z",
@@ -2644,6 +2705,9 @@
     "folder": "Pilsner Urquell - Czech Republic - brewery",
     "factory": "Pilsner Urquell",
     "country": "Czech Republic",
+    "types": [
+      "brewery"
+    ],
     "type": "brewery",
     "count": 11,
     "newest": "2020-08-05T08:38:36.000Z",
@@ -2746,6 +2810,9 @@
     "folder": "Horn - Germany - disassembly",
     "factory": "Horn",
     "country": "Germany",
+    "types": [
+      "disassembly"
+    ],
     "type": "disassembly",
     "count": 15,
     "newest": "2020-07-03T23:00:00.000Z",
@@ -2880,6 +2947,9 @@
     "folder": "Carlsberg - Denmark - brewery",
     "factory": "Carlsberg",
     "country": "Denmark",
+    "types": [
+      "brewery"
+    ],
     "type": "brewery",
     "count": 12,
     "newest": "2019-09-04T08:30:16.000Z",
@@ -2990,6 +3060,9 @@
     "folder": "Berchtegadener land - Germany - dairy company",
     "factory": "Berchtegadener land",
     "country": "Germany",
+    "types": [
+      "dairy company"
+    ],
     "type": "dairy company",
     "count": 8,
     "newest": "2019-08-14T07:48:08.000Z",
@@ -3068,6 +3141,9 @@
     "folder": "Olma - Czech Republic - dairy company",
     "factory": "Olma",
     "country": "Czech Republic",
+    "types": [
+      "dairy company"
+    ],
     "type": "dairy company",
     "count": 13,
     "newest": "2019-04-25T23:00:00.000Z",

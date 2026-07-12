@@ -65,7 +65,7 @@ export const covers = {
   'keller-lufttechnik-italy-door-handle-manufacturer': 'IMG_20220925_162557_052.jpg',
   'alizay-france-dismantling-paper-mill': '20220504_084244.jpg',
   'keller-lufttechnik-germany-automotive-beck': 'IMG_20220118_124513_3.jpg',
-  'keller-lufttechnik-germany-karlsruhe': 'IMG_20211120_094658_4.jpg',
+  'keller-lufttechnik-germany-mineralix-gmbh-construction-rubble-waste-processing': 'IMG_20211120_094658_4.jpg',
   'smartply-ireland-osb-factory': 'IMG_20210914_154608_1.jpg',
   'mondi-czech-republic-paper-mill': 'IMG_20200819_105422_2.jpg',
   'pilsner-urquell-czech-republic-brewery': 'IMG_20190617_131639_1.jpg',

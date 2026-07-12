@@ -45,7 +45,7 @@ const totalPhotos = projects.reduce((n, p) => n + p.count, 0);
             <h3>{p.factory}</h3>
             <div class="meta">
               {p.country && <span class="badge country">{p.country}</span>}
-              {p.type && <span class="badge">{p.type}</span>}
+              {(p.types ?? []).map((t) => <span class="badge">{t}</span>)}
             </div>
             {p.yearFrom && <p class="count">{p.yearFrom === p.yearTo ? p.yearFrom : `${p.yearFrom}–${p.yearTo}`}</p>}
           </div>
