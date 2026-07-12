@@ -7,7 +7,7 @@ export const site = {
   name: 'Zdenek Otcenasek',
   title: 'Construction Supervisor · Mechanical Fitter · Certified MMA / TIG Welder (6G)',
   tagline:
-    'Industrial mechanical construction across Europe — steel structures, pipelines, machinery assembly & dismantling. 8+ years on site in seven countries.',
+    'Industrial mechanical construction across Europe — steel structures, pipelines, machinery assembly & dismantling. 8+ years on site.',
   // Portrait shown in the hero. Put the file at public/me.jpg
   // (the gallery build step optimises it automatically).
   photo: 'me.jpg',
