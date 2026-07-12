@@ -190,7 +190,8 @@ main { min-height: 60vh; }
 .contact-card .role { color: var(--accent); font-weight: 600; margin: 0 0 1.5rem; }
 .contact-list { list-style: none; margin: 0 0 1.5rem; padding: 0; display: grid; gap: 0.9rem; }
 .contact-list li { display: flex; gap: 0.8rem; align-items: baseline; }
-.contact-list .k { width: 90px; flex: none; color: var(--text-soft); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.contact-list .k { width: 160px; flex: none; color: var(--text-soft); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.contact-list .addr { line-height: 1.5; }
 .contact-list a:hover { color: var(--accent); }
 .contact-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; padding-top: 0.5rem; border-top: 1px solid var(--line); }
 
@@ -204,5 +205,5 @@ main { min-height: 60vh; }
 .footer-links a:hover { color: var(--accent); }
 
 @media (max-width: 560px) {
-  .contact-list .k { width: 70px; }
+  .contact-list .k { width: 110px; }
 }

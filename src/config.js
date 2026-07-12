@@ -20,6 +20,12 @@ export const contact = {
   email: 'zdenek.otcenasek@outlook.com',
   linkedin: 'https://www.linkedin.com/in/zdenekotcenasek',
   linkedinLabel: 'linkedin.com/in/zdenekotcenasek',
+  address: [
+    'Nova Ves u Voderad 21',
+    '517 21 Tyniste nad Orlici',
+    'Czech Republic, Europe',
+  ],
+  vat: '07866178',
 };
 
 export const links = {
