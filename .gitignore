@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+
+# ---------------------------------------------------------------------------
+# Original, full-resolution photo folders (the "name - country - type" dirs).
+# These are the untouched originals dropped in by you. They are NOT deployed —
+# the build script reads them and writes web-optimised copies into
+# public/gallery/, which ARE committed. Keeping the heavy originals out of git
+# keeps the repository small and fast.
+# ---------------------------------------------------------------------------
+/*/
+!/public/
+!/src/
+!/scripts/
+!/.github/
+
+# OS / editor cruft
+.DS_Store
+desktop.ini
+Thumbs.db
+*.log

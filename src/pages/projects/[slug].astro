@@ -1,0 +1,81 @@
+---
+import Base from '../../layouts/Base.astro';
+import projects from '../../data/projects.json';
+
+export function getStaticPaths() {
+  return projects.map((p) => ({ params: { slug: p.slug }, props: { project: p } }));
+}
+
+const { project } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const years = project.yearFrom === project.yearTo ? `${project.yearFrom}` : `${project.yearFrom}–${project.yearTo}`;
+---
+
+<Base title={`${project.factory} — ${project.country}`} description={`${project.factory}, ${project.country}${project.type ? ' — ' + project.type : ''}. ${project.count} site photos.`}>
+  <header class="gallery-head">
+    <a class="back" href={base}>← All projects</a>
+    <h1>{project.factory}</h1>
+    <div class="meta">
+      {project.country && <span class="badge country">{project.country}</span>}
+      {project.type && <span class="badge">{project.type}</span>}
+      <span class="count muted">{project.count} photos · {years} · newest first</span>
+    </div>
+  </header>
+
+  <section class="masonry">
+    {project.images.map((im, i) => (
+      <figure>
+        <button class="tile" data-index={i} data-full={`${base}${im.full}`} aria-label={`Open photo ${i + 1}`}>
+          <img src={`${base}${im.thumb}`} alt={`${project.factory} photo ${i + 1}`} loading="lazy" width={im.w} height={im.h} />
+        </button>
+      </figure>
+    ))}
+  </section>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-btn close" id="lb-close" aria-label="Close">✕</button>
+    <button class="lb-btn prev" id="lb-prev" aria-label="Previous">‹</button>
+    <img id="lb-img" src="" alt="" />
+    <button class="lb-btn next" id="lb-next" aria-label="Next">›</button>
+    <span class="counter" id="lb-counter"></span>
+  </div>
+</Base>
+
+<script>
+  const tiles = [...document.querySelectorAll('.masonry .tile')];
+  const urls = tiles.map((t) => t.dataset.full);
+  const box = document.getElementById('lightbox');
+  const img = document.getElementById('lb-img');
+  const counter = document.getElementById('lb-counter');
+  let idx = 0;
+
+  function show(i) {
+    idx = (i + urls.length) % urls.length;
+    img.src = urls[idx];
+    counter.textContent = `${idx + 1} / ${urls.length}`;
+  }
+  function open(i) {
+    show(i);
+    box.classList.add('open');
+    box.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    box.classList.remove('open');
+    box.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    img.src = '';
+  }
+
+  tiles.forEach((t, i) => t.addEventListener('click', () => open(i)));
+  document.getElementById('lb-close').addEventListener('click', close);
+  document.getElementById('lb-next').addEventListener('click', () => show(idx + 1));
+  document.getElementById('lb-prev').addEventListener('click', () => show(idx - 1));
+  box.addEventListener('click', (e) => { if (e.target === box) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (!box.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowRight') show(idx + 1);
+    else if (e.key === 'ArrowLeft') show(idx - 1);
+  });
+</script>

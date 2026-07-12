@@ -1,0 +1,21 @@
+{
+  "name": "zdenek-otcenasek-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "gallery": "node scripts/build-gallery.mjs",
+    "gallery:force": "node scripts/build-gallery.mjs --force",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "npm run gallery && npm run build"
+  },
+  "dependencies": {
+    "astro": "^5.13.0"
+  },
+  "devDependencies": {
+    "exifr": "^7.1.3",
+    "sharp": "^0.34.2"
+  }
+}

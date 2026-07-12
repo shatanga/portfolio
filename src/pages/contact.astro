@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { site, contact, links } from '../config.js';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="Contact" description={`Contact ${site.name} — ${contact.email}, ${contact.phone}`}>
+  <div class="contact-wrap">
+    <div class="contact-card">
+      <h1>{site.name}</h1>
+      <p class="role">{site.title}</p>
+
+      <ul class="contact-list">
+        <li><span class="k">Phone</span><a href={`tel:${contact.phone.replace(/\s+/g, '')}`}>{contact.phone}</a></li>
+        <li><span class="k">Email</span><a href={`mailto:${contact.email}`}>{contact.email}</a></li>
+        <li><span class="k">LinkedIn</span><a href={contact.linkedin} target="_blank" rel="noopener">{contact.linkedinLabel} ↗</a></li>
+        <li><span class="k">Location</span><span>{contact.location}</span></li>
+      </ul>
+
+      <div class="contact-actions">
+        <a class="btn primary" href={`${base}${links.cv}`} download>↓ Download CV (PDF)</a>
+        <a class="btn" href={links.certificates} target="_blank" rel="noopener">Certificates ↗</a>
+      </div>
+    </div>
+  </div>
+</Base>
