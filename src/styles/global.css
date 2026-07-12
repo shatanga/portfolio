@@ -90,7 +90,7 @@ main { min-height: 60vh; }
 }
 .hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); margin: 0 0 0.4rem; letter-spacing: -0.02em; }
 .hero .role { font-size: clamp(1rem, 2.4vw, 1.2rem); color: var(--accent); font-weight: 600; margin: 0 0 1rem; }
-.hero .tagline { font-size: 1.05rem; color: var(--text-soft); max-width: 60ch; margin: 0 0 0.9rem; }
+.hero .tagline { font-size: 1.05rem; color: var(--text); max-width: 60ch; margin: 0 0 0.9rem; font-weight: 700; }
 .hero .edu { font-size: 0.95rem; color: var(--text); max-width: 60ch; margin: 0 0 1.6rem; font-weight: 500; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 0.7rem; }
 
