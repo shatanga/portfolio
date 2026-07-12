@@ -11,6 +11,8 @@ export const site = {
   // Portrait shown in the hero. Put the file at public/me.jpg
   // (the gallery build step optimises it automatically).
   photo: 'me.jpg',
+  education:
+    'MSc in Physical Electronics — Faculty of Nuclear Sciences and Physical Engineering, Czech Technical University in Prague',
 };
 
 export const contact = {

@@ -19,6 +19,7 @@ const totalPhotos = projects.reduce((n, p) => n + p.count, 0);
       <h1>{site.name}</h1>
       <p class="role">{site.title}</p>
       <p class="tagline">{site.tagline}</p>
+      {site.education && <p class="edu">🎓 {site.education}</p>}
       <div class="cta-row">
         <a class="btn primary" href={`${base}${links.cv}`} download>↓ Download CV</a>
         <a class="btn" href={links.certificates} target="_blank" rel="noopener">Certificates ↗</a>
