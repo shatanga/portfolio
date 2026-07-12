@@ -18,7 +18,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 import exifr from 'exifr';
-import { gallery as cfg } from '../src/config.js';
+import { gallery as cfg, covers, exclude } from '../src/config.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -117,9 +117,14 @@ async function main() {
     const outDir = path.join(OUT_DIR, slug);
     await mkdir(outDir, { recursive: true });
 
+    // drop any excluded photos (wrong/personal shots)
+    const norm = (s) => s.toLowerCase().trim().replace(/\.(jpe?g|png)$/i, '');
+    const dropped = new Set((exclude[slug] || []).map(norm));
+    const files = dir.files.filter((f) => !dropped.has(norm(f)));
+
     // date each image, sort newest-first
     const dated = [];
-    for (const file of dir.files) {
+    for (const file of files) {
       const srcPath = path.join(ROOT, dir.name, file);
       dated.push({ file, srcPath, date: await captureDate(srcPath, file) });
     }
@@ -128,7 +133,7 @@ async function main() {
     const images = [];
     for (let i = 0; i < dated.length; i++) {
       const out = await processImage(dated[i].srcPath, outDir, i);
-      images.push({ ...out, date: dated[i].date.toISOString() });
+      images.push({ ...out, date: dated[i].date.toISOString(), orig: dated[i].file });
       process.stdout.write(`\r  ${slug}: ${i + 1}/${dated.length}   `);
     }
     process.stdout.write('\n');
@@ -136,6 +141,17 @@ async function main() {
     const meta = parseFolderName(dir.name);
     const newest = dated[0]?.date ?? new Date(0);
     const oldest = dated[dated.length - 1]?.date ?? newest;
+
+    // Manual cover override: covers[slug] holds an original photo filename.
+    // Fall back to the newest photo when unset or not found.
+    let coverIdx = 0;
+    const wanted = covers[slug];
+    if (wanted) {
+      const found = dated.findIndex((d) => norm(d.file) === norm(wanted));
+      if (found >= 0) coverIdx = found;
+      else console.warn(`! cover for "${slug}": "${wanted}" not found in folder — using newest`);
+    }
+
     projects.push({
       slug,
       folder: dir.name,
@@ -144,13 +160,14 @@ async function main() {
       newest: newest.toISOString(),
       yearFrom: oldest.getFullYear(),
       yearTo: newest.getFullYear(),
-      cover: `gallery/${slug}/${images[0].thumb}`,
+      cover: `gallery/${slug}/${images[coverIdx].thumb}`,
       images: images.map((im) => ({
         full: `gallery/${slug}/${im.large}`,
         thumb: `gallery/${slug}/${im.thumb}`,
         w: im.w,
         h: im.h,
         date: im.date,
+        orig: im.orig,
       })),
     });
     console.log(`✓ ${meta.factory} — ${meta.country}${meta.type ? ' — ' + meta.type : ''} (${images.length})`);
