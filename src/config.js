@@ -62,7 +62,7 @@ export const covers = {
   'mondi-bubak-czech-republic-paper-mill': 'IMG-20230111-WA0002.jpeg',
   'model-sachsen-papier-germany-rewinder-dismantling': 'IMG_20221208_155921_411.jpg',
   'keller-lufttechnik-germany-pharmacy-incubators': 'IMG_20221201_130539_049.jpg',
-  'keller-lufttechnik-italy': 'IMG_20220925_162557_052.jpg',
+  'keller-lufttechnik-italy-door-handle-manufacturer': 'IMG_20220925_162557_052.jpg',
   'alizay-france-dismantling-paper-mill': '20220504_084244.jpg',
   'keller-lufttechnik-germany-automotive-beck': 'IMG_20220118_124513_3.jpg',
   'keller-lufttechnik-germany-karlsruhe': 'IMG_20211120_094658_4.jpg',
