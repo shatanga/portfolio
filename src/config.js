@@ -16,7 +16,6 @@ export const site = {
 export const contact = {
   phone: '+420 604 820 380',
   email: 'zdenek.otcenasek@outlook.com',
-  location: 'Currently in the UK · Available immediately',
   linkedin: 'https://www.linkedin.com/in/zdenekotcenasek',
   linkedinLabel: 'linkedin.com/in/zdenekotcenasek',
 };
