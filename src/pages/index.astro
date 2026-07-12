@@ -47,7 +47,7 @@ const totalPhotos = projects.reduce((n, p) => n + p.count, 0);
               {p.country && <span class="badge country">{p.country}</span>}
               {p.type && <span class="badge">{p.type}</span>}
             </div>
-            <p class="count">{p.count} photo{p.count === 1 ? '' : 's'}{p.yearFrom ? ` · ${p.yearFrom === p.yearTo ? p.yearFrom : p.yearFrom + '–' + p.yearTo}` : ''}</p>
+            {p.yearFrom && <p class="count">{p.yearFrom === p.yearTo ? p.yearFrom : `${p.yearFrom}–${p.yearTo}`}</p>}
           </div>
         </a>
       </article>
