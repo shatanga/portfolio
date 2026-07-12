@@ -41,12 +41,14 @@ function slugify(s) {
 }
 
 // "Name - Country - Type" -> parts. Type may be missing (2-part folders).
+// A trailing roman numeral (e.g. "paper mill II") is only there to keep two
+// same-named folders distinct; strip it from the displayed type.
 function parseFolderName(name) {
   const parts = name.split(' - ').map((p) => p.trim());
   return {
     factory: parts[0] || name,
     country: parts[1] || '',
-    type: parts.slice(2).join(' - ') || '',
+    type: (parts.slice(2).join(' - ') || '').replace(/\s+I{1,3}$/, '').trim(),
   };
 }
 
