@@ -29,9 +29,9 @@ export const contact = {
 };
 
 export const links = {
-  // CV lives in /public/cv/ and is copied there by the gallery build script.
-  cv: 'cv/Zdenek_Otcenasek_CV.pdf',
-  // Certificates: single external Google Drive folder.
+  // CV: external Google Drive folder (opens in a new tab).
+  cv: 'https://drive.google.com/drive/folders/1NiR4zTMFlYmn8jChigZmq-7XuosXB7TC?usp=drive_link',
+  // Certificates: separate external Google Drive folder.
   certificates:
     'https://drive.google.com/drive/folders/1TRCjhB7-kfhempOzSPCOVUr_dyIvHfUg?usp=drive_link',
 };
@@ -85,10 +85,6 @@ export const gallery = {
   thumbSize: 700,
   largeQuality: 80,
   thumbQuality: 72,
-  // Absolute path to the CV PDF to copy into /public/cv/ during build.
-  cvSourcePath:
-    'C:/Users/zdene/My Drive/Zdenek_Otcenasek_construction_documents/Zdenek_Otcenasek_CV/Zdenek_Otcenasek_CV.pdf',
-
   // Portrait for the hero. Drop your original photo at this path and the build
   // resizes it into public/me.jpg. Set flipPortrait: true to un-mirror a
   // front-camera selfie (so reversed text/parting reads correctly).

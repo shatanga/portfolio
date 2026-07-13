@@ -12,7 +12,7 @@
 //             npm run gallery:force   (regenerates every image)
 // ---------------------------------------------------------------------------
 
-import { readdir, mkdir, stat, writeFile, copyFile } from 'node:fs/promises';
+import { readdir, mkdir, stat, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -199,15 +199,7 @@ async function main() {
     console.warn('! Portrait source not found — set gallery.portraitSourcePath in src/config.js (hero photo will be missing until then)');
   }
 
-  // Copy the CV into /public/cv/
-  if (cfg.cvSourcePath && existsSync(cfg.cvSourcePath)) {
-    const cvOut = path.join(ROOT, 'public', 'cv');
-    await mkdir(cvOut, { recursive: true });
-    await copyFile(cfg.cvSourcePath, path.join(cvOut, 'Zdenek_Otcenasek_CV.pdf'));
-    console.log('Copied CV -> public/cv/Zdenek_Otcenasek_CV.pdf');
-  } else {
-    console.warn('! CV source not found — update gallery.cvSourcePath in src/config.js');
-  }
+  // (CV is now an external Google Drive link — no local file to copy.)
 }
 
 main().catch((err) => {
