@@ -7,7 +7,7 @@ export const site = {
   name: 'Zdenek Otcenasek',
   title: 'Physics Engineer (Ing.) & Site Supervisor · Mechanical Fitter · Certified MMA / TIG Welder (newly certified, incl. 6G)',
   tagline:
-    'Physics engineer who chose the tools over the desk. I bring the analytical, quantitative thinking from my technical background straight to the site — as a hands-on construction supervisor, mechanical fitter and certified MMA / TIG welder (incl. 6G).\n\n8+ years on industrial sites across Europe — assembling and welding steel structures and industrial equipment, and leading the crews that do it, alongside clients from the EPC sector.\n\nThat bridge between technical understanding and precise field execution is what I do best — whether it’s heavy industrial construction or high-tech precision assembly.',
+    'Engineer who chose the tools over the desk. I bring the analytical, quantitative thinking from my technical background straight to the site — as a hands-on construction supervisor, mechanical fitter and certified MMA / TIG welder (incl. 6G).\n\n8+ years on industrial sites across Europe — assembling steel structures and industrial equipment, welding and leading the crews.\n\nThat bridge between technical understanding and precise field execution is what I do best — whether it’s heavy industrial construction or high-tech precision assembly.',
   // Portrait shown in the hero. Put the file at public/me.jpg
   // (the gallery build step optimises it automatically).
   photo: 'me.jpg',
