@@ -5,9 +5,9 @@
 
 export const site = {
   name: 'Zdenek Otcenasek',
-  title: 'Construction Supervisor · Mechanical Fitter · Certified MMA / TIG Welder (newly certified, incl. 6G)',
+  title: 'Physics Engineer (Ing.) & Site Supervisor · Mechanical Fitter · Certified MMA / TIG Welder (newly certified, incl. 6G)',
   tagline:
-    'Industrial mechanical construction across Europe — steel structures, machinery assembly & dismantling. Combines technical/analytical education with 8+ years of hands-on site experience.',
+    'A physics engineer who chose the tools over the desk. I bring the same analytical, quantitative thinking from my training — tolerances, materials, root-cause troubleshooting — straight to the shop floor and the site, backed by certified hands-on welding. That bridge between technical understanding and precise field execution is what I do best — whether it’s heavy industrial construction or high-tech precision assembly.',
   // Portrait shown in the hero. Put the file at public/me.jpg
   // (the gallery build step optimises it automatically).
   photo: 'me.jpg',
