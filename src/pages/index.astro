@@ -18,7 +18,7 @@ const totalPhotos = projects.reduce((n, p) => n + p.count, 0);
     <div class="hero-text">
       <h1>{site.name}</h1>
       <p class="role">{site.title}</p>
-      <p class="tagline">{site.tagline}</p>
+      {site.tagline.split('\n\n').map((para) => <p class="tagline">{para}</p>)}
       {site.education && <p class="edu">🎓 {site.education}</p>}
       <div class="cta-row">
         <a class="btn primary" href={links.cv} target="_blank" rel="noopener">Download CV ↗</a>
