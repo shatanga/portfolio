@@ -16,14 +16,9 @@
           {
             "name": "Manitou / Telehandler",
             "valid": "18 Dec 2026"
-          }
-        ]
-      },
-      {
-        "region": "EU",
-        "items": [
+          },
           {
-            "name": "8t forklift",
+            "name": "EU 8t forklift",
             "valid": "31 Dec 2026"
           }
         ]
