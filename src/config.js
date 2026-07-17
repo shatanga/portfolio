@@ -5,7 +5,7 @@
 
 export const site = {
   name: 'Zdenek Otcenasek',
-  title: 'Site Supervisor · Mechanical Fitter · Certified MMA / TIG Welder (incl. 6G)',
+  title: 'Construction Supervisor · Mechanical Fitter · Certified MMA / TIG Welder (incl. 6G)',
   tagline:
     'Engineer who chose the tools over the desk. I bring the analytical, quantitative thinking from my technical background straight to the site — as a hands-on construction supervisor, mechanical fitter and certified MMA / TIG welder (incl. 6G).\n\n8+ years on industrial sites across Europe — assembling steel structures and industrial equipment, welding and leading the crews.\n\nThat bridge between technical understanding and precise field execution is what I do best — whether it’s heavy industrial construction or high-tech precision assembly.',
   // Portrait shown in the hero. Put the file at public/me.jpg
