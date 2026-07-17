@@ -73,6 +73,7 @@ export const covers = {
   'carlsberg-denmark-brewery': 'IMG_20190902_162903_8.jpg',
   'berchtegadener-land-germany-dairy-company': 'IMG_20190814_084808_2.jpg',
   'olma-czech-republic-dairy-company': 'IMG-20190316-WA0002.jpeg',
+  'mckay-river-project-brion-energy-2015-fort-mcmurray-canada-oil-gas-sagd-plant': '20141115_140022.jpg',
 };
 
 // ---------------------------------------------------------------------------
