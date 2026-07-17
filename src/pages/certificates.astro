@@ -3,10 +3,6 @@ import Base from '../layouts/Base.astro';
 import { links } from '../config.js';
 import groups from '../data/certificates.json';
 
-const total = groups.reduce(
-  (n, g) => n + g.subgroups.reduce((m, sg) => m + sg.items.length, 0),
-  0,
-);
 const openish = new Set(['Unlimited']);
 ---
 
@@ -17,11 +13,6 @@ const openish = new Set(['Unlimited']);
   <div class="cert-wrap">
     <header class="cert-head">
       <h1>Certificates</h1>
-      <p class="intro">
-        {total} current certificates — site safety, machinery operation and welding
-        qualifications, grouped by region and welding method. The date shown is each
-        certificate's validity. Full scans are in the Google Drive folder.
-      </p>
       <a class="btn primary" href={links.certificates} target="_blank" rel="noopener"
         >↓ Download scans (Google Drive)</a
       >
