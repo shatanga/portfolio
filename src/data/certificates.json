@@ -1,0 +1,185 @@
+[
+  {
+    "title": "Site Safety & Machinery",
+    "subgroups": [
+      {
+        "region": "Czech Republic",
+        "items": [
+          {
+            "name": "Crane operator",
+            "valid": "18 Dec 2026"
+          },
+          {
+            "name": "Slinger",
+            "valid": "18 Dec 2026"
+          },
+          {
+            "name": "Manitou / Telehandler",
+            "valid": "18 Dec 2026"
+          }
+        ]
+      },
+      {
+        "region": "EU",
+        "items": [
+          {
+            "name": "8t forklift",
+            "valid": "31 Dec 2026"
+          }
+        ]
+      },
+      {
+        "region": "Finland",
+        "items": [
+          {
+            "name": "Työturvallisuuskortti (Occupational Safety Card / Finland)",
+            "valid": "31 Oct 2027"
+          }
+        ]
+      },
+      {
+        "region": "Finland / Sweden",
+        "items": [
+          {
+            "name": "Tulityökortti (Hot Work Card / Finland & Sweden)",
+            "valid": "31 Oct 2027"
+          },
+          {
+            "name": "SSG Access Card",
+            "valid": "15 Feb 2023"
+          }
+        ]
+      },
+      {
+        "region": "Germany",
+        "items": [
+          {
+            "name": "SCC Doc. 017 — HSE for Operational Supervisors (TÜV SÜD)",
+            "valid": "31 Oct 2026"
+          },
+          {
+            "name": "SCC Doc. 018 — HSE for Operational Employees (TÜV SÜD)",
+            "valid": "31 Oct 2026"
+          }
+        ]
+      },
+      {
+        "region": "United Kingdom",
+        "items": [
+          {
+            "name": "Confined space",
+            "valid": "28 Apr 2028"
+          },
+          {
+            "name": "CSCS card",
+            "valid": "30 Apr 2027"
+          },
+          {
+            "name": "NPORS operator — Telehandler & Manitou",
+            "valid": "31 Mar 2028"
+          },
+          {
+            "name": "SSSTS Supervisor Training",
+            "valid": "31 Mar 2030"
+          },
+          {
+            "name": "Banksman Training",
+            "valid": "6 Aug 2027"
+          },
+          {
+            "name": "IPAF Harness Awareness",
+            "valid": "31 Mar 2030"
+          },
+          {
+            "name": "IPAF Elevating Platforms",
+            "valid": "31 Mar 2030"
+          },
+          {
+            "name": "First Aid",
+            "valid": "—"
+          },
+          {
+            "name": "SPA Core Construction",
+            "valid": "12 Mar 2030"
+          },
+          {
+            "name": "Work at height",
+            "valid": "12 Mar 2027"
+          },
+          {
+            "name": "Abrasive wheels",
+            "valid": "Unlimited"
+          },
+          {
+            "name": "Fire Marshall",
+            "valid": "Unlimited"
+          },
+          {
+            "name": "Hot works",
+            "valid": "Unlimited"
+          },
+          {
+            "name": "Manual Handling",
+            "valid": "Unlimited"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Welding",
+    "subgroups": [
+      {
+        "region": "Method 111 (electrode)",
+        "items": [
+          {
+            "name": "ZK 111 1 1 (Z-E1, W01) — basic course (CZ)",
+            "valid": "17 Mar 2027"
+          },
+          {
+            "name": "EN ISO 9606-1 111 P BW FM4 B s12 PF ss nb",
+            "valid": "6 May 2029"
+          },
+          {
+            "name": "EN ISO 9606-1 111 T FW FM3 B t6.0 D48.0 PH ml",
+            "valid": "14 May 2029"
+          }
+        ]
+      },
+      {
+        "region": "Method 135/136 (MAG flux-cored wire)",
+        "items": [
+          {
+            "name": "ZK 135 1 1 (Z-M1, W01) — basic course (CZ)",
+            "valid": "17 Mar 2027"
+          },
+          {
+            "name": "EN ISO 9606-1 136 P FW FM1 P t10 PF ml",
+            "valid": "20 Nov 2026"
+          }
+        ]
+      },
+      {
+        "region": "Method 141 (TIG)",
+        "items": [
+          {
+            "name": "ZK 141 8 (Z-T3, W11) — basic course (CZ)",
+            "valid": "17 Mar 2027"
+          },
+          {
+            "name": "EN ISO 9606-1 141 T BW/FW FM4 S s12 D50 PH-L045 ss nb",
+            "valid": "3 Jun 2029"
+          },
+          {
+            "name": "EN ISO 9606-1 141 T BW/FW FM4 S s1.5 D12 PH-L045 ss nb",
+            "valid": "3 Jun 2029"
+          },
+          {
+            "name": "EN ISO 9606-1 141 T BW/FW FM6 S s12 D50 PH-L045 ss gb",
+            "valid": "3 Jun 2029"
+          }
+        ]
+      }
+    ]
+  }
+]

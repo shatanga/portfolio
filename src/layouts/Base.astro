@@ -7,6 +7,7 @@ const base = import.meta.env.BASE_URL;
 const pageTitle = title ? `${title} — ${site.name}` : `${site.name} — Portfolio`;
 const nav = [
   { href: base, label: 'Portfolio' },
+  { href: `${base}certificates`, label: 'Certificates' },
   { href: `${base}contact`, label: 'Contact' },
 ];
 // normalise current path for active-link matching
